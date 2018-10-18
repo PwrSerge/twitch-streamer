@@ -1,0 +1,32 @@
+<aside>
+  <button (click)="onFilter('')" class="nav-item">All</button>
+  <button (click)="onFilter('online')" class="nav-item">Online</button>
+  <button (click)="onFilter('offline')" class="nav-item">Offline</button>
+</aside>
+
+<ul class="grid-channels">
+  <li class="list-group" *ngFor="let stream of streams | filter:filteredStatus:'stream_status'" (click)="onSelected()">
+
+    <a href="{{stream.url}}" target="_blank">
+      <img src="{{ stream.logo }}" alt="{{ stream.logo }}" class="image-responsive">
+    </a>
+    <p class="list-group-item" *ngIf="stream.stream_status == 'offline'">
+      <a href="{{stream.url}}" target="_blank">{{ stream.display_name }}</a>
+      &nbsp;is currently
+      <span class="offline-status">&nbsp;{{stream.stream_status}}</span>
+    </p>
+    <p class="list-group-item" *ngIf="stream.stream_status == 'online'" [ngClass]="getStatusClasses(stream)">
+      <a href="{{stream.url}}" target="_blank">{{ stream.display_name }}</a>
+      is
+      <span class="online-status">
+    <svg viewBox="0 0 20 20" class="icon-1">
+      <g transform="translate(10, 10)"><circle cx="0" cy="0" r="5"  fill="inherit;"></circle>
+      </g>
+    </svg>live</span>
+      <br>
+      <span class="list-group-item--status">{{stream.status | shorten:60}}</span>
+    </p>
+
+
+  </li>
+</ul>

@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~sass/variables';
+@import '~sass/mixins';
+@import '~sass/layout';
+// bootstrap 4 
+// @import '~bootstrap/scss/functions',
+// '~bootstrap/scss/variables',
+// '~bootstrap/scss/mixins',
+// '~bootstrap/scss/print',
+// '~bootstrap/scss/reboot',
+// '~bootstrap/scss/type';
+/* Main Typography */
+
+@font-face {
+  font-family: 'twitch-tv';
+  src: url('../assets/Twitchy.TV.otf');
+}
+@font-face {
+  font-family: 'LibreFranklin';
+  src: url('../assets/librefranklin-regular.ttf');
+}
+@font-face {
+  font-family: 'librefranklinBold';
+  src: url('../assets/librefranklin-bold.ttf');
+}
+
+
+
+/* Base */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+}
+
+html,
+body {
+  font-family: libreFranklin, sans-serif;
+  font-size: 100%/1.375;
+   background-color: $colorbg1;
+
+}
+
+

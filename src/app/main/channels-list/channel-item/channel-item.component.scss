@@ -1,0 +1,95 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+.list-group {
+  font-size: 1.2em;
+  font-weight: 200;
+  display: flex;
+  align-content: center;
+  background-color: $colorbg2;
+}
+
+.icon-1 {
+  fill: $color6;
+  width: 1em;
+  height: 1em;
+}
+
+.list-group-item {
+  align-self: center;
+  padding: 1em;
+  &--status {
+    font-size: 0.85em;
+  }
+}
+
+button {
+  font-size: inherit;
+  outline: inherit;
+  background: inherit;
+  color: inherit;
+  border: none;
+  border-radius: inherit;
+}
+
+a:visited,
+a:link {
+  color: $color1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $color3;
+  text-decoration-style: solid;
+}
+
+img {
+  display: inline-flex;
+  border-radius: 50%;
+  padding: .75em;
+  max-height: 100px;
+}
+
+aside {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: .5em; //  box-shadow: 2px 2px 10px $shadow;
+  justify-content: space-around; 
+  background-color: $colorbg2;
+  font-size: 1.5em;
+  font-weight: bold;
+  border: $border1;
+  border-radius: $border-radius;
+  @include for-desktop-up {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
+
+.nav-item {
+  width: 400px;
+  min-height: 3em;
+  line-height: 3em;
+  flex: 1;
+  text-align: center;
+  align-self: stretch;
+  cursor: pointer;
+  &:link,
+  &:visited {
+    color: $color1;
+    text-decoration: none;
+  }
+  &:hover {
+    background-color: rgb(245, 245, 245);
+    color: $color3;
+  }
+}
+
+.offline-status {
+  color: $color7;
+  font-family: 'librefranklinBold';
+}
+
+.online-status {
+  color: $color6;
+  font-family: 'librefranklinBold';
+}

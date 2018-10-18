@@ -1,0 +1,24 @@
+@import '~sass/variables';
+
+
+header {
+  padding: .75em;
+ 
+
+}
+h1 {
+  font-family: twitch-tv, sans-serif;
+  color: white;
+  font-size: 2em;
+  margin-top: -.5em;
+
+  
+
+}
+.svg-logo_twitch {
+  position: relative;
+  left: 0;
+  fill: white;
+  height: 32px;
+  width: 94px;
+}
