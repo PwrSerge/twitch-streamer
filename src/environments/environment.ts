@@ -4,13 +4,5 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false,
-  firebaseConfig: {
-    apiKey: 'AIzaSyCKDKOH4EQUxmlS00LuGxHPgVkTq67SKk0',
-    authDomain: 'twitch-streamer-stage.firebaseapp.com',
-    databaseURL: 'https://twitch-streamer-stage.firebaseio.com',
-    projectId: 'twitch-streamer-stage',
-    storageBucket: 'twitch-streamer-stage.appspot.com',
-    messagingSenderId: '149605547169'
-  }
+  production: false
 };
