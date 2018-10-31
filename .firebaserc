@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "twitch-streamer"
+    "default": "twitch-streamer",
+    "staging": "twitch-streamer-stage"
   }
 }

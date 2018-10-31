@@ -13,8 +13,11 @@ import { ChannelItemComponent } from './main/channels-list/channel-item/channel-
 import { ShortenPipe } from './shorten.pipe';
 import { FilterPipe } from './filter.pipe';
 import { TrimWhiteSpacePipe } from './trim.pipe';
+// import { AngularFireModule } from '@angular/fire';
+// import { environment } from '../environments/environment';
 
 
+//  export const firebaseConfig = environment.firebaseConfig;
 
 @NgModule({
   declarations: [
@@ -32,6 +35,7 @@ import { TrimWhiteSpacePipe } from './trim.pipe';
     BrowserModule,
     AppRoutingModule,
     HttpModule
+    // AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [StreamService],
   bootstrap: [AppComponent],

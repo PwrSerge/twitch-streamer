@@ -5,13 +5,12 @@
 
 export const environment = {
   production: false,
-  firebase: {
-    apiKey: 'AIzaSyCKG2Hmv0Upglw2407DlVsOt4-xsbBqVvs',
-    authDomain: 'twitch-streamer.firebaseapp.com',
-    databaseURL: 'https://twitch-streamer.firebaseio.com',
-    projectId: 'twitch-streamer',
-    storageBucket: 'twitch-streamer.appspot.com',
-    messagingSenderId: '203070399290'
+  firebaseConfig: {
+    apiKey: 'AIzaSyCKDKOH4EQUxmlS00LuGxHPgVkTq67SKk0',
+    authDomain: 'twitch-streamer-stage.firebaseapp.com',
+    databaseURL: 'https://twitch-streamer-stage.firebaseio.com',
+    projectId: 'twitch-streamer-stage',
+    storageBucket: 'twitch-streamer-stage.appspot.com',
+    messagingSenderId: '149605547169'
   }
 };
-
